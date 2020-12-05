@@ -114,9 +114,9 @@ results=vector("numeric")
 for (j in 1:1000){
 bank=0
 for(i in 1:637){
-  class=sample(daysYEAR,15,replace=TRUE)
+  class=sample(daysYEAR,28,replace=TRUE)
   n=length(unique(class))
-  if(n == 15)bank=bank-2
+  if(n == 28)bank=bank-2
   else bank=bank+1
 }
 results[j]=bank
@@ -126,7 +126,5 @@ hist(results)
 
 
 
-# Discussion and Conclusion
 
-<!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
