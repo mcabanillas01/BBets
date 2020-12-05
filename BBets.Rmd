@@ -41,6 +41,16 @@ daysYEAR=1:365
 bDAYS=sample(daysYEAR,35,replace=TRUE)
 length(unique(bDAYS))
 ```
+```{r}
+bank=0
+for(i in 1:637){
+  class=sample(daysYEAR,35,replace=TRUE)
+  n=length(unique(class))
+  if(n == 35)bank=bank-2
+  else bank=bank+1
+}
+print(bank)
+```
 
 
 # What size of class makes the 2:1 bet fair?  
